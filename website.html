@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .nav-link {
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #667eea;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-gray-800">My Portfolio</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-600 hover:text-purple-600 font-medium">Home</a>
+                    <a href="#about" class="nav-link text-gray-600 hover:text-purple-600 font-medium">About</a>
+                    <a href="#vlog" class="nav-link text-gray-600 hover:text-purple-600 font-medium">Vlog</a>
+                    <a href="#ojt" class="nav-link text-gray-600 hover:text-purple-600 font-medium">OJT Experience</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-600">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="#home" class="block py-2 text-gray-600 hover:text-purple-600">Home</a>
+                <a href="#about" class="block py-2 text-gray-600 hover:text-purple-600">About</a>
+                <a href="#vlog" class="block py-2 text-gray-600 hover:text-purple-600">Vlog</a>
+                <a href="#ojt" class="block py-2 text-gray-600 hover:text-purple-600">OJT Experience</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-32 mt-16">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <div class="w-32 h-32 bg-white rounded-full mx-auto mb-8 flex items-center justify-center">
+                <img src="aaron.jpg" alt="Profile" class="w-full h-full object-cover rounded-full" />
+            </div>
+            <h1 class="text-5xl font-bold mb-4">Welcome to My Portfolio</h1>
+            <p class="text-xl mb-8 opacity-90">Showcasing my journey, experiences, and growth</p>
+            <a href="#about" class="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition duration-300">Learn More About Me</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">About Me</h2>
+                <div class="w-24 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="bg-gray-100 rounded-full flex items-center justify-center overflow-hidden" style="width: 320px; height: 320px;">
+                    <img src="aaron.jpg" alt="Aaron Jan" class="w-full h-full object-cover" />
+                </div>
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Hello! I'm Aaron Jan B. Estacio</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        An aspiring IT student dedicated to facing the challenges with motivation and perseverance. Eager to learn, grow and contribute to dynamic work environment. Known for being adaptable, responsible, and committed to developing new skills.                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Through my OJT experience, I've developed strong organizational skills, attention to detail, and a passion for helping others. I believe in continuous learning and am always eager to take on new challenges.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">Organized</span>
+                        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">Detail-oriented</span>
+                        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">Team Player</span>
+                        <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">Adaptable</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vlog Section -->
+    <section id="vlog" class="py-20 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">My Vlog</h2>
+                <div class="w-24 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 text-lg">Sharing my experiences and journey through video content</p>
+            </div>
+            <div class="flex justify-center">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover w-full max-w-md">
+                    <div class="bg-gray-200 flex items-center justify-center" style="height: 320px;">
+                        <video class="w-full h-full object-cover rounded-lg" controls poster="video-placeholder.jpg">
+                            <source src="your-video.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">My OJT Journey</h3>
+                        <p class="text-gray-600 mb-4">My Whole Experience as an OJT student in West Tapinac Barangay Hall</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OJT Experience Section -->
+    <section id="ojt" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">My OJT Experience</h2>
+                <div class="w-24 h-1 bg-purple-600 mx-auto mb-6"></div>
+                <p class="text-gray-600 text-lg">Key tasks and responsibilities during my On-the-Job Training</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Filing Task -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover border border-gray-100">
+                    <div class="bg-gradient-to-br from-blue-100 to-blue-200 h-48 flex items-center justify-center">
+                        <div class="text-center text-blue-600">
+                            <svg class="w-20 h-20 mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z"/>
+                            </svg>
+                            <p class="font-semibold text-lg">Filing Tasks</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Document Filing</h3>
+                        <p class="text-gray-600 mb-4">Organized and maintained filing systems, ensuring proper documentation and easy retrieval of important records.</p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Digital and physical filing
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Document categorization
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Record maintenance
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Sorting Task -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover border border-gray-100">
+                    <div class="bg-gradient-to-br from-green-100 to-green-200 h-48 flex items-center justify-center">
+                        <div class="text-center text-green-600">
+                            <svg class="w-20 h-20 mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M9,3V4H4V6H5V19A2,2 0 0,0 7,21H17A2,2 0 0,0 19,19V6H20V4H15V3H9M7,6H17V19H7V6M9,8V17H11V8H9M13,8V17H15V8H13Z"/>
+                            </svg>
+                            <p class="font-semibold text-lg">Sorting Tasks</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Data Sorting</h3>
+                        <p class="text-gray-600 mb-4">Systematically organized various types of data and materials according to specific criteria and organizational standards.</p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Alphabetical sorting
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Priority classification
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Database organization
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Barangay Assistance Task -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover border border-gray-100">
+                    <div class="bg-gradient-to-br from-purple-100 to-purple-200 h-48 flex items-center justify-center">
+                        <div class="text-center text-purple-600">
+                            <svg class="w-20 h-20 mx-auto mb-3" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M16,4C18.11,4 19.8,5.69 19.8,7.8C19.8,9.91 18.11,11.6 16,11.6C13.89,11.6 12.2,9.91 12.2,7.8C12.2,5.69 13.89,4 16,4M16,13.4C18.67,13.4 24,14.73 24,17.4V20H8V17.4C8,14.73 13.33,13.4 16,13.4M8.8,12C10.36,12 11.6,10.76 11.6,9.2C11.6,7.64 10.36,6.4 8.8,6.4C7.24,6.4 6,7.64 6,9.2C6,10.76 7.24,12 8.8,12M8.8,13.4C6.67,13.4 2.4,14.46 2.4,16.6V18.8H6.8V17.4C6.8,16.5 7.1,15.7 7.6,15.1C7.1,14.8 6.9,14.6 8.8,13.4Z"/>
+                            </svg>
+                            <p class="font-semibold text-lg">Community Service</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Barangay Assistance</h3>
+                        <p class="text-gray-600 mb-4">Actively participated in community service activities, helping residents with various administrative and support tasks.</p>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Resident assistance
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Document processing
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Community events
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h3 class="text-2xl font-semibold mb-4">Let's Connect</h3>
+            <p class="text-gray-400 mb-8">Feel free to reach out for opportunities or collaborations</p>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.417 7.618 11.174-.105-.949-.199-2.403.041-3.439.219-.937 1.406-5.957 1.406-5.957s-.359-.72-.359-1.781c0-1.663.967-2.911 2.168-2.911 1.024 0 1.518.769 1.518 1.688 0 1.029-.653 2.567-.992 3.992-.285 1.193.6 2.165 1.775 2.165 2.128 0 3.768-2.245 3.768-5.487 0-2.861-2.063-4.869-5.008-4.869-3.41 0-5.409 2.562-5.409 5.199 0 1.033.394 2.143.889 2.741.099.12.112.225.085.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.402.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.357-.629-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24.009 12.017 24.009c6.624 0 11.99-5.367 11.99-11.988C24.007 5.367 18.641.001.012.001z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-gray-400">&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+
+        // Vlog video buttons
+        document.querySelectorAll('button').forEach(button => {
+            if (button.textContent.includes('Watch Video')) {
+                button.addEventListener('click', function() {
+                    alert('Video player would open here! This is a demo portfolio.');
+                });
+            }
+        });
+
+        // Add scroll effect to navigation
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.classList.add('shadow-xl');
+            } else {
+                nav.classList.remove('shadow-xl');
+            }
+        });
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9686561b37488623',t:'MTc1NDA2MTgwMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
